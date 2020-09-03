@@ -2,18 +2,27 @@
 
 ### 环境准备
 
-1.所有 Mars 项目都应该放在同一个目录中
+1.将此目录克隆到（所有 Mars 项目都应该放在同一个目录中）
 > 例如形成如下的目录结构:
 >
-> Mars
+> Mars/
 >
-> -- source-app
+> -- source-app/
 >
-> -- internal
+> -- internal/
+>
+> -- version.properties
 
 2.添加环境变量：`MARS_PROJECT_ROOT`
 > 例如: export MARS_PROJECT_ROOT=/Users/Rin/Documents/Develop/MultiPlatform/Projects/Mars
 
 ### Kotlin 编译器说明
-基本所有 Kotlin 项目的 JvmTarget 都需要 1.8 以上，所以在开发前应该调整你的 Intellij-IDEA / Android-Studio 的设置
->  将 `Preferences | Other Settings | Kotlin Compiler | Target JVM version` 设置为 1.8
+Mars 所有项目都基于 Kotlin 1.4 开发，所以 JvmTarget 都需要 1.8 以上，在开发前应该调整你的 Intellij-IDEA / Android-Studio 的设置
+>  `Preferences | Other Settings | Kotlin Compiler`
+> 1. Language version 设置为 1.4
+> 2. API version 设置为 1.4
+> 3. Target JVM version 设置为 1.8
+
+
+### 代码规范
+建议优先使用二格缩进的代码风格 [参考](https://github.com/square/kotlinpoet/issues/659#issue-427238344) （真实性未知，但二格缩进在 Mars 项目开发上可能会更加适合与美观，特别是使用 Kotlin 编写 [UIKit](https://github.com/MarsPlanning/uikit) 时）
