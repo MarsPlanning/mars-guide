@@ -11,7 +11,7 @@
 >
 > -- internal/
 >
-> -- version.properties
+> -- versions.properties
 
 2.添加环境变量：`MARS_PROJECT_ROOT`
 > 例如: export MARS_PROJECT_ROOT=/Users/Rin/Documents/Develop/MultiPlatform/Projects/Mars
